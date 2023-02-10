@@ -1,0 +1,438 @@
+*,
+*::before,
+*::after
+    margin: 0
+    padding: 0
+    border: none
+    box-sizing: border-box
+
+body
+    padding: 0
+    margin: 0
+
+.wrapper
+    display: flex
+    flex-direction: column
+    min-height: 100%
+
+.header__container
+    display: flex
+
+.header-content__left
+    flex: 0 1 70%
+    img
+        width: 100%
+        height: 100%
+
+.header-content__rigth
+    padding: 60px
+    min-height: 100%
+    flex: 0 1 30%
+
+    .burger-menu
+        display: flex
+        flex-direction: column
+        height: 26px
+        width: 40px
+        justify-content: space-between
+        cursor: pointer
+
+        .burger-item
+            width: 100%
+            height: 2px
+            background: black
+
+    .rigth-head-content__title
+        margin: 50px 0
+        font-family: system-ui
+        font-size: 45.712px
+        color: rgb(38, 47, 50)
+        line-height: 1.444
+        font-weight: 200
+        span
+            font-weight: 600
+
+    .rigth-head-content__description
+        font-size: 20.57px
+        font-family: system-ui
+        color: rgb(38, 47, 50)
+        line-height: 1.556
+
+@media (max-width: 991.98px)
+    .header__container
+        flex-wrap: wrap-reverse
+
+    .header-content__left
+        flex: 0 1 100%
+
+    .header-content__rigth
+        flex: 0 1 100%
+
+@media (max-width: 767.98px)
+    .rigth-head-content__title
+        font-size: 32px !important
+
+    .rigth-head-content__description
+        font-size: 16px !important
+
+    .header-content__rigth
+        padding: 30px
+//====================== SECTION TWO ======================
+
+.page
+    flex: 1 1 auto
+
+.starting__container
+    display: flex
+    width: 100%
+    height: 100%
+
+.starting-left-content
+    flex: 0 1 40%
+
+.image-left-starting
+    background-image: url('../img/02.jpg')
+    width: 100%
+    min-height: 100%
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    position: relative
+    padding: 80px 50px
+
+.background-left
+    background: rgba(30, 146, 175, 0.75)
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+
+.content-starting-left__items
+    position: relative
+    z-index: 1
+    display: flex
+    flex-direction: column
+    gap: 30px
+
+.item-left-content__title
+    font-size: 45px
+    font-family: system-ui
+    color: rgb(255, 255, 255)
+    line-height: 1.467
+    font-weight: 300
+    span
+        font-weight: 600
+
+.item-left-content__description
+    font-size: 15.57px
+    font-family: system-ui
+    color: rgba(255, 255, 255, 0.878)
+    line-height: 1.798
+
+.starting-left__item
+    position: relative
+    z-index: 1
+
+.starting-rigth-content
+    flex: 0 1 60%
+    min-height: 100%
+    width: 100%
+    display: flex
+    flex-direction: column
+
+.starting-up-content
+    background: url('../img/03.jpg')
+    width: 100%
+    height: 100%
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    position: relative
+    padding: 80px 50px
+    flex: 1 0 50%
+
+.starting-up-content.down
+    background: url('../img/04.jpg')
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    height: 100%
+    flex: 1 0 50%
+
+.item-right-content__description
+    max-width: 600px
+    font-size: 15.57px
+    font-family: system-ui
+    color: rgba(38, 47, 50, 0.878)
+    line-height: 1.798
+    margin: 20px 0
+
+.item-content__button
+    background: transparent
+    font-size: 16.57px
+    color: rgb(38, 47, 50)
+    line-height: 1.931
+    border: 1px solid black
+    padding: 10px 60px
+    border-radius: 10px
+    cursor: pointer
+
+.item-content__button.white-button
+    border: 1px solid white
+    color: white
+
+.background-right
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+
+.background-right.brown
+    background: rgba(255, 244, 210, 0.91)
+
+.background-right.black
+    background: rgba(0,0,0, 0.6)
+
+.black-text
+    color: black
+.white-text
+    color: white
+
+@media (max-width: 1110.98px)
+    .image-left-starting
+        padding: 80px 30px
+
+    .starting-up-content
+        padding: 80px 30px
+
+@media (max-width: 991.98px)
+    .item-left-content__title
+        font-size: 32px
+
+    .item-left-content__description
+        font-size: 13px
+
+    .starting-rigth-content
+        min-width: 100%
+    .starting__container
+        flex-wrap: wrap
+
+    .starting-left-content
+        flex: 0 1 100%
+
+@media (max-width: 991.98px)
+    .image-left-starting
+        padding: 50px 20px
+
+    .starting-up-content
+        padding: 50px 20px
+
+//====================== SECTION TWO ======================
+
+//====================== FOOTER ======================
+.footer
+    width: 100%
+    height: 100%
+
+.footer__container
+    width: 100%
+    height: 100%
+    display: flex
+
+.footer-left
+    background-image: url(../img/05.jpg)
+    width: 100%
+    height: 100vh
+    background-repeat: no-repeat
+    background-size: cover
+    flex: 0 1 30%
+    position: relative
+
+.background-left.birch
+    background: rgba(29, 83, 103, 0.75)
+
+.foo-left__content
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100%
+    padding: 50px
+    position: relative
+    z-index: 1
+
+.foo-left__title
+    font-size: 45px
+    font-family: system-ui
+    color: rgb(255, 255, 255)
+    line-height: 1.467
+    font-weight: 200
+    span
+        font-weight: 600
+
+.info-foo-left__name
+    margin-bottom: 10px
+    font-size: 42px
+    font-family: system-ui
+    color: rgb(255, 255, 255)
+    line-height: 1.571
+    font-weight: 600
+
+.info-foo-left__sub-name
+    font-size: 16.57px
+    font-family: system-ui
+    color: rgb(255, 255, 255)
+    font-weight: 300
+
+.footer-right
+    background-image: url(../img/06.jpg)
+    width: 100%
+    min-height: 100%
+    background-repeat: no-repeat
+    background-size: cover
+    flex: 0 1 70%
+    position: relative
+
+.background-left.whiteing
+    background: rgba(90, 102, 95, 0.5)
+
+.foo-right__content
+    position: relative
+    z-index: 1
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 50px
+
+.foo-right__title
+    font-size: 45px
+    font-family: system-ui
+    color: rgb(255, 255, 255)
+    line-height: 1.467
+    font-weight: 200
+    span
+        font-weight: 600
+
+.foo-right__form
+    width: 100%
+    display: flex
+    flex-direction: column
+    gap: 20px
+
+.form-content__input-item
+    display: flex
+    gap: 10px
+    flex-wrap: wrap
+
+.form-content__input
+    background: transparent
+    border: 1px solid white
+    padding: 15px 20px
+    border-radius: 10px
+    outline: none
+    color: white
+    max-width: 300px
+    min-width: 250px
+
+.form-content__input::placeholder
+    color: white
+
+.form-content__textarea
+    background: transparent
+    border: 1px solid white
+    padding: 15px 20px
+    border-radius: 10px
+    outline: none
+    color: white
+    resize: none
+    max-width: 510px
+    min-width: 200px
+
+.form-content__textarea::placeholder
+    color: white
+
+.social__title
+    font-size: 16.57px
+    font-family: system-ui
+    color: rgb(255, 255, 255)
+    line-height: 1.931
+    text-align: left
+
+.foo-right__social-list
+    display: flex
+    gap: 5px
+    align-items: center
+    li
+        list-style-type: none
+
+    .social-item.facebook a
+        border-color: rgb(255, 255, 255)
+        border-radius: 7px
+        background-color: rgb(52, 91, 180)
+        width: 40px
+        height: 40px
+        display: flex
+
+    .social-item.dribble a
+        border-color: rgb(255, 255, 255)
+        border-radius: 7px
+        background-color: rgb(230, 72, 149)
+        width: 40px
+        height: 40px
+        display: flex
+
+    .social-item.twitter a
+        border-color: rgb(255, 255, 255)
+        border-radius: 7px
+        background-color: rgb(0, 180, 255)
+        width: 40px
+        height: 40px
+        display: flex
+
+    .social-item a
+        position: relative
+        svg
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-40%, -45%)
+
+.foo-right__other-text
+    font-size: 16.57px
+    font-family: system-ui
+    color: rgb(255, 255, 255)
+    line-height: 1.931
+    text-align: left
+    color: white
+
+@media (max-width: 1110.98px)
+    .foo-left__title
+        font-size: 32px
+
+@media (max-width: 991.98px)
+    .footer__container
+        flex-wrap: wrap-reverse
+    .footer-left
+        min-width: 100%
+        background-size: 100% 100%
+    .footer-right
+        min-width: 100%
+        background-size: 100% 100%
+
+    .foo-right__title
+        margin: 0 0 30px 0
+
+    .foo-right__form
+        margin: 0 0 30px 0
+
+    .social__title
+        margin: 0 0 20px 0
+
+    .foo-right__social-list
+        margin: 0 0 20px 0
+
+@media (max-width: 610.98px)
+    .form-content__input
+        max-width: 100%
+        min-width: auto
+
+//====================== FOOTER ======================
